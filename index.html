@@ -129,8 +129,7 @@ footer{text-align:center;padding:34px;background:#082f49;color:#fff;line-height:
 
 <section><div class="emergency reveal"><h2>🚨 24/7 Emergency Services</h2>
 <p>Emergency services are available 24 hours a day, 7 days a week.</p>
-<div class="emergency-number">📞 9876543210</div>
-<button class="btn" style="background:#fff;color:#dc2626" onclick="callEmergency()">Call Emergency</button></div></section>
+</div></section>
 
 <section id="contact"><h2 class="section-title reveal">Contact Us</h2>
 <p class="section-text reveal">Have a question? Send us a message.</p>
@@ -254,7 +253,6 @@ document.querySelectorAll(".nav-links a").forEach(l=>l.addEventListener("click",
 function openAppointment(){$("appointmentModal").style.display="flex";}
 function closeAppointment(){$("appointmentModal").style.display="none";}
 function bookAppointment(e){e.preventDefault();alert("✅ Appointment request submitted successfully!");closeAppointment();e.target.reset();}
-function callEmergency(){if(confirm("Call Emergency: 9876543210?"))location.href="tel:9876543210";}
 function sendMessage(e){e.preventDefault();alert("Thank you "+$("name").value+"! Your message has been submitted.");e.target.reset();}
 function goTop(){scrollTo({top:0,behavior:"smooth"});}
 addEventListener("click",e=>{if(e.target===$("appointmentModal"))closeAppointment();});
